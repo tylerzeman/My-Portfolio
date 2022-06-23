@@ -11,4 +11,4 @@ deployed application.
 
 ![Screenbshot1](/relative/assets/images/screenshot1.png?raw=true "Screenshot1")
 
-![Screenbshot2](relative/assets/images/screenshot1.png?raw=true "Screenshot2")
+![Screenbshot2]/assets/images/screenshot1.png?raw=true "Screenshot2")
