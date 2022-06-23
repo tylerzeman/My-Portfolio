@@ -9,6 +9,6 @@ deployed application.
 
 #Screenshots of Webpage
 
-![Screenbshot1](assets/images/tscreenshot1.png?raw=true "Screenshot1")
+![Screenbshot1](/assets/images/tscreenshot1.png?raw=true "Screenshot1")
 
-![Screenbshot2](assets/images/tscreenshot1.png?raw=true "Screenshot2")
+![Screenbshot2](/assets/images/tscreenshot1.png?raw=true "Screenshot2")
