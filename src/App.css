@@ -1,38 +1,181 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: white;
+  --secondary-color: rgb(83, 133, 224);
+  --third-color: black;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Glocal Selectors */
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.main-header {
+  height: 50px;
+  background: var(--secondary-color);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: var(--main-color);
+  border-bottom: 5px solid var(--third-color);
+}
+
+.main-header nav a {
+  color: var(--main-color);
+  text-decoration: none;
+  position: relative;
+  margin: auto 5px;
+  padding: 0px 30px;
+}
+
+header.main-header nav a:not(:last-child) {
+  margin-right: 8px;
+}
+
+header.main-header nav a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  width: 0%;
+  height: 1px;
+  background: var(--main-color);
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+header.main-header nav a:hover:after {
+  width: 100%;
+}
+
+.mainview {
+  padding: 500px;
+  margin-bottom: 25px;
+  background: url(./images/background.jpg);
+  background-size: cover;
+  background-position: "center";
+  color: var(--main-color);
+  justify-content: center;
+  align-content: center;
+}
+.mainview h1 {
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.339);
+  width: fit-content;
+  font-size: 90px;
+}
+
+
+
+.box {
+  border: 5px solid black;
+  color: var(--main-color);
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 15px;
+  margin: auto 30px;
+  width: 100%;
+  height: auto;
+  font-size: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section img {
+  border-radius: 50%;
+  width: auto;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sectionStyle {
   display: flex;
-  flex-direction: column;
+  margin: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50vw;
+  height: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+.resumeStyling {
+  display: flex;
+  width: auto;
+  background-color: rgb(242, 246, 249);
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#resume {
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content:center;
+  font-size: x-large;
+}
+
+.eduWork {
+  margin:25px 50px;
+  padding:25px 50px;
+  font-size: xx-large;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.projects {
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content:center;
+  font-size: x-large;
+  text-align: center;
+}
+
+.bottom-bar {
+  height: 50px;
+  color: var(--main-color);
+  background: var(--secondary-color);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid var(--third-color);
+}
+
+.bottom-bar a {
+  text-decoration: none;
+  color: var(--main-color);
+  position: relative;
+  margin: auto 5px;
+  padding: 0px 30px;
+}
+
+footer.bottom-bar a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  width: 0%;
+  height: 1px;
+  background: var(--main-color);
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+footer.bottom-bar a:hover:after {
+  width: 100%;
 }
