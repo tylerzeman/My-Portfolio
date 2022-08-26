@@ -27,28 +27,6 @@ function App() {
         <Education/>
         <Resume/>
         <Projects/>
-        <section class="section">
-          {/* <p class="box">
-            My 2nd Bootcamp porject titled FitSpace, was designed to be a
-            fitness app that allows the user to register/login with our backend
-            SQL DB. The user is then able to search for a workout that can be
-            searched for by equipment, body part, or even muscle group. Once the
-            user decides on what to search the Dashboard will then be populated
-            with various workouts with gifs on how to perform said workout with
-            a title and various properties including a save feature. This save
-            feature will allow the user to save the workout to their account in
-            the database and be able to view them whenever they log back into
-            FitSpace.
-          </p> */}
-        </section>
-        <section class="section">
-          {/* <p class="box">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-            quasi minima fugiat delectus error, reiciendis fugit, sit totam iste
-            placeat architecto? Eius atque optio dolore similique quo, molestiae
-            laboriosam magnam.
-          </p> */}
-        </section>
         <footer id="footer"class="bottom-bar">
           <a href="https://github.com/tylerzeman" target="_blank">
             Github
