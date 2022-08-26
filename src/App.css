@@ -97,7 +97,7 @@ header.main-header nav a:hover:after {
   text-align: center;
 }
 
-section img {
+section #prfpic {
   border-radius: 50%;
   width: auto;
   height: auto;
@@ -143,6 +143,22 @@ section img {
   justify-content:center;
   font-size: x-large;
   text-align: center;
+ 
+}
+.projects a img {
+  height: 300px;
+  width: 300px;
+  margin: 25px 50px;
+  border-radius: 30%;
+  border: 5px solid rgb(1, 1, 1);
+}
+
+.projects a img:focus {
+  outline: none;
+}
+
+.projects a img:active {
+  transform: scale(0.98);
 }
 
 .bottom-bar {
