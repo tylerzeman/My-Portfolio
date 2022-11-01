@@ -19,9 +19,11 @@ function App() {
           <p class="box">
             Hello everyone, my name is Tyler Zeman. I am 23 years old and aspire
             becoming a Full Stack Developer. Before I have taken a 1-month web
-            development Bootcamp with Nucamp in Decemeber 2020. I hope to gain
-            lots of valuable information from the Full Stack Bootcamp I am
-            attending this summer through the University of Minnesota.
+            development Bootcamp with Nucamp in Decemeber 2020 to gain a basis
+            for Web Development. Since then it has inspired me to take on the
+            Full-Stack Development bootcamp at the University of Minnesota,
+            since I have which graduated during September 2022. I look forward to
+            the future and learning more at all my future prospects!
           </p>
         </section>
         <Education />
