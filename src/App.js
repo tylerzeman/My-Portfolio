@@ -1,6 +1,7 @@
 import "./App.css";
 import profilePic from "./images/profile.jpg";
 import Header from "./components/Header";
+import TechSkills from "./components/TechSkills";
 import Education from "./components/Education";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
@@ -8,15 +9,15 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <div className="App">
-      <body>
+      
         <Header />
-        <div class="mainview">
+        <div className="mainview">
           <h1>Tyler Zeman</h1>
           <h2>Software Developer</h2>
         </div>
-        <section id="about-me" class="section sectionStyle">
+        <section id="about-me" className="section sectionStyle ">
           <img id="prfpic" src={profilePic} alt="profile pic"></img>
-          <p class="box">
+          <p className="box" >
             Hello everyone, my name is Tyler Zeman. I am 23 years old and aspire
             becoming a Full Stack Developer. Before I have taken a 1-month web
             development Bootcamp with Nucamp in Decemeber 2020 to gain a basis
@@ -26,10 +27,11 @@ function App() {
             the future and learning more at all my future prospects!
           </p>
         </section>
+        <TechSkills />
         <Education />
         <Resume />
         <Projects />
-        <footer id="footer" class="bottom-bar">
+        <footer id="footer" className="bottom-bar">
           <a href="https://github.com/tylerzeman" target="_blank">
             Github
           </a>
@@ -40,7 +42,7 @@ function App() {
             LinkedIn
           </a>
         </footer>
-      </body>
+      
     </div>
   );
 }
