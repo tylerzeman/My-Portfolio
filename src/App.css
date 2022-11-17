@@ -81,7 +81,9 @@ header.main-header nav a:hover:after {
   width: fit-content;
   font-size: 90px;
 }
-
+#about-me {
+  margin: 5rem auto;
+}
 .box {
   border: 5px solid black;
   color: var(--main-color);
@@ -156,50 +158,51 @@ section #prfpic {
 
 .projects {
   background-color: rgb(255, 255, 255);
-  align-items: center;
   font-size: 1.6vw;
   text-align: center;
 }
 
 .projSection {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: auto;
 }
 .projCol {
-  display: flex;
-  flex-direction: column;
+  margin: 5rem;
+  padding: 4rem 4rem 0rem 4rem;
+  font-size: 1vw;
+  background-color: black;
+  border-radius: 2rem;
+  color: white;
 }
 
-.projCol a {
-  color: black;
+.repoBtn {
+  height: 4.5vh;
+  margin: 5rem auto;
+  text-align: center;
+  background: white;
+  font-size: 1vw;
+  border:1px solid white;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.repoBtn a {
+  padding:1.5rem;
   text-decoration: none;
-}
-.repoLink {
-  position: relative;
-}
-.repoLink:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0px;
-  width: 0%;
-  height: 1px;
-  background: var(--third-color);
-  border-radius: 3px;
-  transition: width 0.5s;
+  color:black;
 }
 
-.repoLink:hover:after {
-  width: 100%;
+.repoBtn:active {
+  transform: scale(0.9);
 }
 
 .projects a img {
-  height: 300px;
-  width: 300px;
+  height: 25vh;
+  width: 18vw;
   margin: 2rem 1rem;
-  border-radius: 20%;
-  border: 5px solid rgb(1, 1, 1);
+  border-radius: 2rem;
+  /* border: 5px solid rgba(1, 1, 1, 0.8); */
 }
 
 .projects a img:focus {
@@ -207,7 +210,7 @@ section #prfpic {
 }
 
 .projects a img:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .bottom-bar {
@@ -219,7 +222,6 @@ section #prfpic {
   align-items: center;
   justify-content: center;
   border-top: 5px solid var(--third-color);
-  margin-top: 2rem;
 }
 
 .bottom-bar a {
@@ -252,8 +254,8 @@ footer.bottom-bar a:hover:after {
     width: fit-content;
   }
   .projects a img {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 20vw;
   }
 }
 
@@ -275,8 +277,8 @@ footer.bottom-bar a:hover:after {
     font-size: 1.25vw;
   }
   .projects a img {
-    height: 100px;
-    width: 100px;
+    height: 20vh;
+    width: 25vw;
   }
 }
 
@@ -294,6 +296,10 @@ footer.bottom-bar a:hover:after {
   .eduWork {
     font-size: 1.5vw;
   }
+  .projCol {
+    margin: 3.5rem;
+    font-size: 1.5vw;
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -308,13 +314,12 @@ footer.bottom-bar a:hover:after {
     font-size: 20px;
     padding: 5px;
   }
-  .box {
-  }
   section #prfpic {
     visibility: hidden;
   }
   .projects a img {
-    height: 60px;
-    width: 60px;
+    height: auto;
+    width: 30vw;
+    border-radius: .5rem;
   }
 }
