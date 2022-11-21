@@ -67,7 +67,10 @@ header.main-header nav a:hover:after {
 .mainview {
   padding: 500px;
   margin-bottom: 25px;
-  background: url(./images/background.jpg);
+  background: url(./images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: "center";
   color: var(--main-color);
@@ -136,20 +139,14 @@ section #prfpic {
   width: auto;
   background-color: rgb(242, 246, 249);
   height: 400px;
-}
-
-#resume {
   background-color: rgb(18, 18, 18);
   color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
-  font-size: x-large;
+  font-size: 1vw;
 }
-
-.eduWork {
-  margin: 25px 50px;
-  padding: 25px 50px;
-  font-size: xx-large;
+.resumeStyling h1 {
+  margin-right: 5rem;
 }
 
 .divider {
@@ -182,15 +179,16 @@ section #prfpic {
   text-align: center;
   background: white;
   font-size: 1vw;
-  border:1px solid white;
+  border: 1px solid white;
   border-radius: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .repoBtn a {
-  padding:1.5rem;
+  padding: 1.5rem;
   text-decoration: none;
-  color:black;
+  color: black;
+  
 }
 
 .repoBtn:active {
@@ -253,6 +251,9 @@ footer.bottom-bar a:hover:after {
     font-size: 24px;
     width: fit-content;
   }
+  .resumeStyling {
+    height: 350px;
+  }
   .projects a img {
     height: auto;
     width: 20vw;
@@ -267,11 +268,9 @@ footer.bottom-bar a:hover:after {
   .sectionStyle {
     width: 85vw;
   }
-  #resume {
-    font-size: medium;
-  }
+
   .resumeStyling {
-    height: 200px;
+    height: 250px;
   }
   .eduWork {
     font-size: 1.25vw;
@@ -280,46 +279,117 @@ footer.bottom-bar a:hover:after {
     height: 20vh;
     width: 25vw;
   }
+  .projCol {
+    font-size: 2vw;
+  }
+  .repoBtn a{
+    font-size: 1.5vw;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  .mainview {
+    padding: 300px;
+    font-size: 1.3vw;
+  }
+  .mainview h1 {
+    font-size: 4.5vw;
+  }
+  section #prfpic {
+    height: auto;
+    width: 35vw;
+  }
   .box {
     font-size: 20px;
     padding: 10px;
   }
   .sectionStyle {
-    width: 100vw;
-  }
-  section #prfpic {
-    visibility: hidden;
+    flex-direction: column;
   }
   .eduWork {
     font-size: 1.5vw;
   }
+  .projects {
+    font-size: 2.5vw;
+  }
   .projCol {
-    margin: 3.5rem;
+    padding: 3rem 3.5rem 0rem 3.5rem;
+    margin: 4rem;
     font-size: 1.5vw;
+    font-size: 2vw;
+  }
+  .repoBtn a {
+    padding: 1rem;
   }
 }
 
 @media only screen and (max-width: 720px) {
+  section #prfpic {
+    height: auto;
+    width: 35vw;
+  }
+  .main-header {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .main-header nav a {
+    margin: auto;
+  }
   .mainview {
     padding: 150px;
     font-size: 1.35vw;
   }
   .mainview h1 {
-    font-size: 4.5vw
+    font-size: 4.5vw;
   }
   .box {
-    font-size: 20px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 2rem auto;
   }
-  section #prfpic {
-    visibility: hidden;
+
+  .resumeStyling {
+    height: 200px;
+    font-size: 2.5vw;
+  }
+  .eduWork {
+    font-size: 2vw;
   }
   .projects a img {
     height: auto;
-    width: 30vw;
-    border-radius: .5rem;
+    width: 35vw;
+    border-radius: 0.5rem;
+  }
+  .repoBtn a{
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about-me {
+    margin: 1.5rem auto;
+  }
+  .box {
+    margin: 2rem auto;
+    font-size: 15px;
+  }
+  #tsTitle {
+    font-size: 3.5vw;
+  }
+  .techPng {
+    margin: 1.75rem auto;
+  }
+  .eduWork {
+    font-size: 2vw;
+  }
+  .projects {
+    font-size: 2.75vw;
+  }
+
+  .projCol {
+    padding: 2rem 2.5rem 0rem 2.5rem;
+    margin: 4rem;
+    font-size: 1.5vw;
+    font-size: 3.5vw;
   }
 }

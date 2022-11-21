@@ -1,7 +1,7 @@
 
 const Education = () => {
   return (
-    <section id="resume" className="resumeStyling">
+    <section className="resumeStyling">
           <h1>Education</h1>
           <div className="eduWork">
             <h2>Full Stack Web Development Bootcamp</h2>
