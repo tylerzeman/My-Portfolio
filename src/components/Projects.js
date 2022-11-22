@@ -22,7 +22,7 @@ const Projects = () => {
             store links in local storage. This was created in mind to help clean up and sort messy bookmark bars/folders.
           </p>
           <button className="repoBtn"><a
-              href="https://github.com/tylerzeman/My-Portfolio"
+              href="https://github.com/tylerzeman/Homepage"
               target="_blank"
             >
               Repository
@@ -47,7 +47,7 @@ const Projects = () => {
             easy.
           </p>
             <button className="repoBtn"><a
-              href="https://github.com/tylerzeman/My-Portfolio"
+              href="https://github.com/tylerzeman/FitSpace"
               target="_blank"
               className="repoLink"
             >
@@ -65,7 +65,7 @@ const Projects = () => {
             even code snippets with or without an internet connection.
             </p>
             <button className="repoBtn"><a
-              href="https://github.com/tylerzeman/My-Portfolio"
+              href="https://github.com/tylerzeman/Text-Editor"
               target="_blank"
               className="repoLink"
             >
@@ -88,7 +88,7 @@ const Projects = () => {
             passwords with a basic html page and CSS styling.
           </p>
           <button className="repoBtn"><a
-              href="https://github.com/tylerzeman/My-Portfolio"
+              href="https://github.com/tylerzeman/Work-Day-Scheduler"
               target="_blank"
               className="repoLink"
             >
@@ -112,7 +112,7 @@ const Projects = () => {
             characters.
           </p>
           <button className="repoBtn"><a
-              href="https://github.com/tylerzeman/My-Portfolio"
+              href="https://github.com/tylerzeman/Password-Generator"
               target="_blank"
               className="repoLink"
             >
